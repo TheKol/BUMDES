@@ -1,0 +1,34 @@
+{
+  "name": "warung-desa-backend",
+  "version": "1.0.0",
+  "description": "POS for BUMDES",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon ./index.js --exec ./node_modules/.bin/babel-node -e js"
+  },
+  "author": "Raden Indra Akbar Saputra",
+  "license": "ISC",
+  "dependencies": {
+    "apollo-server": "^3.4.0",
+    "apollo-server-express": "^3.4.0",
+    "bcrypt": "^5.0.1",
+    "casual": "^1.6.2",
+    "cookie-parser": "^1.4.5",
+    "cors": "^2.8.5",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "graphql": "^15.6.1",
+    "graphql-tools": "^8.2.0",
+    "graphql-upload": "^12.0.0",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^6.0.11",
+    "nodemon": "^2.0.13",
+    "uuid": "^8.3.2"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-stage-0": "^6.24.1"
+  }
+}
