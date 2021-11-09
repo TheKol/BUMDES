@@ -6,11 +6,18 @@ import { graphqlUploadExpress } from 'graphql-upload';
 import cors from 'cors';
 import path from 'path';
 require('dotenv').config();
+import {
+  ApolloServerPluginLandingPageGraphQLPlayground
+} from "apollo-server-core";
+
 
 async function startServer() {
   const server = new ApolloServer({
     typeDefs,
     resolvers,
+    plugins: [
+      ApolloServerPluginLandingPageGraphQLPlayground(),
+    ],  
     context: ({ req, res }) => ({ req, res }),
   });
 
